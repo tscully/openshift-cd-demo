@@ -272,6 +272,12 @@ objects:
       spec:
         containers:
         - env:
+          - name: "HTTP_PROXY"
+            value: "http://  "
+          - name: "HTTPS_PROXY"
+            value: "http://  "
+          - name: "NO_PROXY"
+            value: " string "
           - name: CICD_NAMESPACE
             valueFrom:
               fieldRef:
